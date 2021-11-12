@@ -21,13 +21,13 @@ def download():
     if op == 1:
         var = input("Ingrese el link del video: ")
         yt = pytube.YouTube(var)
-        path = "/Users/User/Downloads"
+        path = "/Users/Ubicación/Downloads"
         yt.streams.first().download(path)
         print("\n","Descarga Éxitosa Archivo Guardado En: ","\n",path, "\n","Con el Nombre: ", yt.title)
         opcion()
     elif op == 2:
         var = input("Ingrese el link del video: ")
-        path="/Users/User/Downloads"
+        path="/Users/Proyecto/Downloads"
         yt = pytube.YouTube(var)
         #El numero 140 indica el tag, un tag indica el formato del archivo en este caso el formato 140
         #representa el formato mp4
